@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:Arial, Helvetica, sans-serif ;
+    background-image: url('cloud.png');
+    /*background-image: url('bg.jpg');add image*/
+    
+  }
+  
+  .wapp { /*contains header, main*/
+    display: flex;
+    flex-direction: column;/*header and main alligns vertically*/
+    min-height: 100%;
+   
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;/*aligns horizontally*/
+    padding: 70px;
+  }
+  header input::placeholder {
+    color: rgb(255, 255, 255); }
+  
+  header input {
+    
+    max-width: 300px;
+    padding: 10px ;
+    border-radius: 0px 16px 0px 16px;
+    border:none;
+    outline:none;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(13, 13, 13);
+    font-size: 20px;
+    transition: 0.2s ;
+  }
+  
+  header input:focus {
+    background-color: rgb(246, 246, 246);
+    color:black;
+   
+  }
+  
+  main {
+    display:flex;
+    padding: 10px ;
+    flex-direction: column;/*section,current - child class*/
+    align-items: center;/*aligns vertically*/
+    text-align: center;
+  }
+  
+  .city {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    margin-bottom: 9px;
+  }
+  
+    .date {
+    color: white;
+    font-size: 16px;
+  }
+  
+    .temp {
+    color: white;
+    font-size:80px;
+    font-weight:800;
+    margin: 30px ;
+    text-shadow: 2px 8px rgba(0, 0, 0, 0.3);
+  } 
+
+  
+    .weather {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  }
+  
